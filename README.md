@@ -23,17 +23,29 @@ Add an alias in `app/config/app.php`:
 <?php
 
 return array(
-
   // ...
-
   'aliases' => array(
     // ...
-    'Debug' => 'Awareness\Debugr\Debugr',
+    'Debugr' => 'Awareness\Debugr\Facades',
     // ...
   )
-
   // ...
+);
+```
 
+... and the service provider (also in `app/config/app.php`):
+
+```
+<?php
+
+return array(
+  // ...
+  'providers' => array(
+    // ...
+    'Awareness\Debugr\DebugrServiceProvider',
+    // ...
+  )
+  // ...
 );
 ```
 

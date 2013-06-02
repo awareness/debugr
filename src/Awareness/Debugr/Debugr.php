@@ -8,11 +8,9 @@ class Debugr {
    * @param  mixed
    * @param  bool   if true, exit
    */
-  public static function dump($data, $exit=true)
+  public function dump($data, $exit=true)
   {
-    echo '<pre>';
-    print_r($data);
-    echo '</pre>';
+    echo '<pre>'.print_r($data, true).'</pre>';
     if ($exit) {
       exit;
     }
