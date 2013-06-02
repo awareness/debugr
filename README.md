@@ -36,3 +36,10 @@ return array(
 
 );
 ```
+
+Debug!!!
+
+```
+$stuff = 'things';
+Debug::dump($stuff); //=> things
+```
