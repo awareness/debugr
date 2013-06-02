@@ -7,7 +7,7 @@ Quick and easy debugging for laravel
 
 Add Debugr to your `composer.json`:
 
-```php
+```js
 { // composer.json
   ...
   "require": {
