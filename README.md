@@ -7,7 +7,7 @@ Quick and easy debugging for laravel
 
 Add Debugr to your `composer.json`:
 
-```
+```php
 { // composer.json
   ...
   "require": {
@@ -19,7 +19,7 @@ Add Debugr to your `composer.json`:
 
 Add an alias in `app/config/app.php`:
 
-```
+```php
 <?php
 
 return array(
@@ -35,7 +35,7 @@ return array(
 
 ... and the service provider (also in `app/config/app.php`):
 
-```
+```php
 <?php
 
 return array(
@@ -51,7 +51,8 @@ return array(
 
 Debug!!!
 
-```
+```php
 $stuff = 'things';
 Debug::dump($stuff); //=> things
 ```
+
